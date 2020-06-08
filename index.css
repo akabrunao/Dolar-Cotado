@@ -1,0 +1,37 @@
+.dolar{
+   width: 120px;
+}
+
+.viewsize{
+   height: 100vh;
+}
+
+/* remover arrow dos input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+/* Alterar glow dos input e animação no focus */
+ input[type=number] {
+   -webkit-transition: all 0.25s ease-in-out;
+   -moz-transition: all 0.25s ease-in-out;
+   -ms-transition: all 0.25s ease-in-out;
+   -o-transition: all 0.25s ease-in-out;
+   outline: none;
+   padding: 3px 0px 3px 3px;
+   margin: 5px 1px 3px 0px;
+   border: 1px solid #DDDDDD;
+ }
+  
+ input[type=number]:focus {
+   box-shadow: 0 0 5px rgb(43, 185, 155);
+   padding: 3px 0px 3px 3px;
+   margin: 5px 1px 3px 0px;
+   border: 1px solid rgb(43, 185, 155);
+ }
