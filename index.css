@@ -13,25 +13,30 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type=currency] {
    -moz-appearance: textfield;
 }
 
 /* Alterar glow dos input e animação no focus */
- input[type=number] {
+ input[type=currency] {
    -webkit-transition: all 0.25s ease-in-out;
    -moz-transition: all 0.25s ease-in-out;
    -ms-transition: all 0.25s ease-in-out;
    -o-transition: all 0.25s ease-in-out;
+   width: 182px;
    outline: none;
-   padding: 3px 0px 3px 3px;
+   padding: 3px 3px 3px 3px;
    margin: 5px 1px 3px 0px;
    border: 1px solid #DDDDDD;
  }
   
- input[type=number]:focus {
+ input[type=currency]:focus {
    box-shadow: 0 0 5px rgb(43, 185, 155);
-   padding: 3px 0px 3px 3px;
+   padding: 3px 3px 3px 3px;
    margin: 5px 1px 3px 0px;
    border: 1px solid rgb(43, 185, 155);
+ }
+
+ div.container{
+   padding-top: 20vh;
  }

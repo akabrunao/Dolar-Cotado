@@ -11,29 +11,26 @@
     <!-- BUTTER CAKE CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/css/butterCake.min.css">
     <link rel='stylesheet' href="index.css">
+    <script type="module" src="index.js"></script>
   </head>
   <body class="bg-light">
     <!-- jQuery first, then Butter Cake JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/js/butterCake.min.js"></script>
 
-    <nav class='navbar expand-sm fixed-top default-nav bg-light'>
-      <div class='container fa-start fj-start'>
-        <button class="btn light mr-1"><a class="text-gray" href="#!">Home</a></button>
-        <button class="btn light mr-1"><a class="text-gray" href="#!">Ajude o projeto</a></button>
-        <button class="btn light mr-1"><a class="text-gray" href="#!">Home</a></button>
-      </div>
-    </nav>
+
 
     <section class='viewsize '>
-      <div class="container pt-10 fa-center fj-between flex-column">
+      <div class="container flex-center-center flex-column">
         <img src='img/circledolar.png' class='img-contain dolar'>
-        <div class="flex-row pt-3 flex-center-center pl-4">
-          <p class='display-4 mr-1 mb-0 pb-1 text-gray'>$</p>
-          <input type='number' class='input mr-2'>
-          <p class='display-4 mr-2 mb-0 pb-1 text-gray'>=</p>
-          <p class='display-4 mr-1 mb-0 pb-1 text-gray'>R$</p>
-          <input type='number' class='input'>
+        <div class="flex-row pt-3  flex-center-center fj-between">
+          <p class='h1 mr-1 mb-0 pb-1 text-gray'>US$</p>
+          <input id="dolar" type='currency' placeholder='Digite o valor em dolar' value='236' class='input mr-2 text-center  '>
+        </div>
+        <div>
+          <p id='resultado' class='h3 text-gray'>
+            O valor em reais é R$34,24
+          </p>
         </div>
       </div>
     </section>
