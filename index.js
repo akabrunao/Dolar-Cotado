@@ -7,13 +7,14 @@ request.send();
 request.onload = function () {
   var dolar = request.response;
   getDolarValue(dolar);
-
   console.log(dolar);
 };
 
 function getDolarValue(dolar) {
   let dolarValue = dolar.USD.bid;
-}
+  let userDolar = document.querySelector("input#dolar").value;
+  let real = userDolar * dolarValue;
 
-let userDolar = document.getElementById(dolar).;
-console.log(userDolar);
+  document.getElementById("resultado").innerHTML =
+    "O valor em reais é R$ " + real;
+}
