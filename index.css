@@ -40,3 +40,11 @@ input[type=currency] {
  div.container{
    padding-top: 20vh;
  }
+
+ button.btn{
+   background-color: rgb(43, 185, 155);
+   color: white;
+   padding-top: 9.5px;
+   padding-bottom: 9.5px;
+
+ }
