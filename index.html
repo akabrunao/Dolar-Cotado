@@ -5,39 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dolar Cotado</title>
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- BUTTER CAKE CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/css/butterCake.min.css">
     <link rel='stylesheet' href="index.css">
     <script src="index.js"></script>
   </head>
+
   <body class="bg-light">
-    <!-- jQuery first, then Butter Cake JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/buttercake@4.0.0/dist/js/butterCake.min.js"></script>
-
-
 
     <section class='viewsize '>
+
       <div class="container flex-center-center flex-column">
+
         <img src='img/circledolar.png' class='img-contain dolar'>
+
         <div class="flex-row pt-3  flex-center-center fj-between">
-          <p class='h1 mr-1 mb-0 pb-1 text-gray'>US$</p>
+          <p class='h1 mr-1 mb-0 text-gray txt'>US$</p>
           <input id="inputdolar" type='number' placeholder='Valor em dolar'  class='input mr-2 text-center  '>
           <button class="btn" onclick="changeValue()" >OK</button>
         </div>
+
         <div>
-          <p id='resultado' class='h3 text-gray'>
-            
+          <p id='resultado' class='h3 text-gray text-center'>
+            Adicionar cotação atual aqui no onload
           </p>
         </div>
+
       </div>
+
     </section>
-
-
-
 
   </body>
 </html>

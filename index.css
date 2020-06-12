@@ -1,3 +1,17 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 375px) {
+ .txt {
+   font-size: 30px !important;
+ }
+ input {
+   width: 130px !important;
+   height: 20px !important;
+   padding: 0px !important;
+ }
+}
+
 .dolar{
    width: 120px;
 }
@@ -13,12 +27,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=currency] {
+input[type=number] {
    -moz-appearance: textfield;
 }
 
 /* Alterar glow dos input e animação no focus */
- input[type=currency] {
+ input[type=number] {
    -webkit-transition: all 0.25s ease-in-out;
    -moz-transition: all 0.25s ease-in-out;
    -ms-transition: all 0.25s ease-in-out;
@@ -30,7 +44,7 @@ input[type=currency] {
    border: 1px solid #DDDDDD;
  }
   
- input[type=currency]:focus {
+ input[type=number]:focus {
    box-shadow: 0 0 5px rgb(43, 185, 155);
    padding: 3px 3px 3px 3px;
    margin: 5px 1px 3px 0px;

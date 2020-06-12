@@ -4,14 +4,22 @@ request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 
+request.onload = function () {
+  let dolarObj = request.response;
+  dolarValue = dolarObj.USD.bid;
+  document.getElementById("resultado").innerHTML = `1 dolar = ${Number(
+    dolarValue
+  ).toFixed(2)} reais`;
+};
+
 function getDolarValue(dolarObj) {
   let dolarValue = dolarObj.USD.bid;
   return dolarValue;
 }
 
 function changeValue() {
-  var dolar = request.response;
-  dolarValue = getDolarValue(dolar);
+  var dolarObj = request.response;
+  dolarValue = getDolarValue(dolarObj);
   let userDolar = document.querySelector("input#inputdolar").value;
   let real = userDolar * dolarValue;
   document.getElementById("resultado").innerHTML =
