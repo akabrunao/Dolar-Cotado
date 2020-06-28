@@ -45,9 +45,9 @@ input[type=number] {
  }
   
  input[type=number]:focus {
-   box-shadow: 0 0 5px rgb(43, 185, 155);
    padding: 3px 3px 3px 3px;
-   margin: 5px 1px 3px 0px;
+   margin: 5px 15px 3px 0px;
+   box-shadow: 0 0 5px rgb(43, 185, 155);
    border: 1px solid rgb(43, 185, 155);
  }
 
@@ -71,5 +71,9 @@ select#selectMoeda {
   border-radius: 3px;
   border: 1px solid #DDDDDD;
   background-color: #FFF;
+}
 
+select#selectMoeda:focus {
+  box-shadow: 0 0 5px rgb(43, 185, 155);
+  border: 1px solid rgb(43, 185, 155);
 }
