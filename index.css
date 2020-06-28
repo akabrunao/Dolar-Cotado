@@ -40,7 +40,7 @@ input[type=number] {
    width: 182px;
    outline: none;
    padding: 3px 3px 3px 3px;
-   margin: 5px 1px 3px 0px;
+   margin: 5px 15px 3px 0px;
    border: 1px solid #DDDDDD;
  }
   
@@ -62,3 +62,14 @@ input[type=number] {
    padding-bottom: 9.5px;
 
  }
+
+select#selectMoeda {
+  width: 60px !important;
+  height: 45px !important;
+  margin: 2px 15px 0px 0px;
+  padding: 0px 0px 0px 10px;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  background-color: #FFF;
+
+}

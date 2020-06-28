@@ -4,6 +4,7 @@ request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 
+// Mostra valor do dolar ao carregar página
 request.onload = function () {
   let dolarObj = request.response;
   dolarValue = dolarObj.USD.bid;
@@ -18,12 +19,22 @@ function getDolarValue(dolarObj) {
 }
 
 function changeValue() {
-  var dolarObj = request.response;
-  dolarValue = getDolarValue(dolarObj);
-  let userDolar = document.querySelector("input#inputdolar").value;
-  let real = userDolar * dolarValue;
-  document.getElementById("resultado").innerHTML =
-    "O valor em reais é R$ " + real.toFixed(2);
+  let selectMoeda = document.querySelector("#selectMoeda");
+  if (selectMoeda.value == "US$") {
+    let dolarObj = request.response;
+    dolarValue = getDolarValue(dolarObj);
+    let userDolar = document.querySelector("input#inputdolar").value;
+    let real = userDolar * dolarValue;
+    document.getElementById("resultado").innerHTML =
+      "O valor em reais é R$ " + real.toFixed(2);
+  } else if (selectMoeda.value == "R$") {
+    let dolarObj = request.response;
+    dolarValue = getDolarValue(dolarObj);
+    let userReal = document.querySelector("input#inputdolar").value;
+    let real = userReal / dolarValue;
+    document.getElementById("resultado").innerHTML =
+      "O valor em dolar é US$ " + real.toFixed(2);
+  }
 }
 
 document.addEventListener("keydown", function (event) {

@@ -20,8 +20,13 @@
         <img src='img/circledolar.png' class='img-contain dolar'>
 
         <div class="flex-row pt-3  flex-center-center fj-between">
-          <p class='h1 mr-1 mb-0 text-gray txt'>US$</p>
-          <input id="inputdolar" type='number' placeholder='Valor em dolar'  class='input mr-2 text-center  '>
+
+          <select name="selectMoeda" id="selectMoeda">
+            <option value="US$">US$</option>
+            <option value='R$'>R$</option>
+          </select>
+
+          <input id="inputdolar" type='number' placeholder='Valor em dolar'  class='input text-center'>
           <button class="btn" onclick="changeValue()" >OK</button>
         </div>
 
