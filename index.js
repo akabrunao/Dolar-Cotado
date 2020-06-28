@@ -20,6 +20,7 @@ function getDolarValue(dolarObj) {
 
 function changeValue() {
   let selectMoeda = document.querySelector("#selectMoeda");
+
   if (selectMoeda.value == "US$") {
     let dolarObj = request.response;
     dolarValue = getDolarValue(dolarObj);
