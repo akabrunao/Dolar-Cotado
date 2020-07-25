@@ -4,8 +4,4 @@ Essa é uma aplicação que converte dolar em real usando a cotação atual do d
 
 Obti a cotação atual do dolar através da [API de moedas da AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas) e na criação dos estilos do site utilizei a biblioteca [Butter Cake](https://getbuttercake.com/).
 
-### Print ao abrir aplicação
-![Print ao abrir aplicação](img/firstLoad.png)
-
-### Print ao calcular algum valor
-![Print ao calcular algum valor](img/5reais.png)
+![dolarcotado](https://user-images.githubusercontent.com/51511472/88465488-c9d94900-ce99-11ea-929b-2a95012399e3.gif)
