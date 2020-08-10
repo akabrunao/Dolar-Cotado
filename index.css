@@ -1,79 +1,79 @@
 * {
   font-family: 'Roboto', sans-serif;
+  font-size: 60%;
 }
-@media (max-width: 375px) {
- .txt {
-   font-size: 30px !important;
- }
- input {
-   width: 130px !important;
-   height: 20px !important;
-   padding: 0px !important;
- }
+:root{
+  --green-dolar-cotado: rgb(43, 185, 155);
+  --light-gray: #DDDDDD
 }
 
-.dolar{
-   width: 120px;
+body section .container{
+  padding-top: 20vh;
 }
 
-.viewsize{
-   height: 100vh;
+section .container img {
+  width: 14rem;
 }
+  
+.container div select {
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 4rem;
+  background-color: white;
+  padding-left: 5px;
+  margin-right: 5px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  outline: none;
+}
+
+.container div input {
+  -moz-appearance: textfield;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 12rem;
+  padding-left: 10px;
+  margin-right: 5px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+}
+
+.container div button{
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: var(--green-dolar-cotado);
+  color: white;
+}
+
+.container div p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.container div p::selection {
+  background:var(--green-dolar-cotado)
+}
+
+
 
 /* remover arrow dos input number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-   -moz-appearance: textfield;
 }
 
 /* Alterar glow dos input e animação no focus */
- input[type=number] {
-   -webkit-transition: all 0.25s ease-in-out;
-   -moz-transition: all 0.25s ease-in-out;
-   -ms-transition: all 0.25s ease-in-out;
-   -o-transition: all 0.25s ease-in-out;
-   width: 182px;
-   outline: none;
-   padding: 3px 3px 3px 3px;
-   margin: 5px 15px 3px 0px;
-   border: 1px solid #DDDDDD;
- }
-  
- input[type=number]:focus {
-   padding: 3px 3px 3px 3px;
-   margin: 5px 15px 3px 0px;
-   box-shadow: 0 0 5px rgb(43, 185, 155);
-   border: 1px solid rgb(43, 185, 155);
- }
+.container div input,
+.container div select {
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
 
- div.container{
-   padding-top: 20vh;
- }
-
- button.btn{
-   background-color: rgb(43, 185, 155);
-   color: white;
-   padding-top: 9.5px;
-   padding-bottom: 9.5px;
-
- }
-
-select#selectMoeda {
-  width: 60px !important;
-  height: 45px !important;
-  margin: 2px 15px 0px 0px;
-  padding: 0px 0px 0px 10px;
-  border-radius: 3px;
-  border: 1px solid #DDDDDD;
-  background-color: #FFF;
 }
-
-select#selectMoeda:focus {
-  box-shadow: 0 0 5px rgb(43, 185, 155);
-  border: 1px solid rgb(43, 185, 155);
+ 
+.container div input:focus,
+.container div select:focus {
+  box-shadow: 0 0 5px var(--green-dolar-cotado);
+  border: 1px solid var(--green-dolar-cotado);
 }
