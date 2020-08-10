@@ -50,6 +50,11 @@ section .container img {
   margin-top: 1rem;
 }
 
+.container div img::selection{
+  background: #fff;
+}
+.container div select::selection,
+.container div input::selection,
 .container div p::selection {
   background:var(--green-dolar-cotado)
 }
